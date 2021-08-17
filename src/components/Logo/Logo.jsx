@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Logo.module.css';
+import logo from '../../img/logo.png';
 
-const Logo = ({ children }) => {
+const Logo = () => {
   return (
     <div className={styles.container}>
       <div>
-        <img src="../../img/logo.png" alt="dfsdfsfd" />
+        <img className={styles.logo} src={logo} alt="logo" />
       </div>
-      <h1>Some logo</h1>
     </div>
   );
 };

@@ -1,25 +1,24 @@
 import React from 'react';
+
 import styles from './HeaderMenu.module.css';
+import { Link } from 'react-router-dom';
 
 const HeaderMenu = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <nav className={styles.stroke}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to="/home">Головна</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link to="/about">Про Себе</Link>
           </li>
           <li>
-            <a href="#">Downloads</a>
+            <a href="#">Екскурсії</a>
           </li>
           <li>
-            <a href="#">More</a>
-          </li>
-          <li>
-            <a href="#">Nice staff</a>
+            <a href="#">Контакти</a>
           </li>
         </ul>
       </nav>
