@@ -1,5 +1,8 @@
 .container {
-  height: 100px;
-  width: 300px;
   background-color: aqua;
+  margin: 20px 100px;
+}
+
+.logo {
+  height: 150px;
 }

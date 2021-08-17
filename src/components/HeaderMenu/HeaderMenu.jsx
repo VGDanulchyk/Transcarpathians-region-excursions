@@ -3,7 +3,7 @@ import styles from './HeaderMenu.module.css';
 
 const HeaderMenu = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <nav className={styles.stroke}>
         <ul>
           <li>
