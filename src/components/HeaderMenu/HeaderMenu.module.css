@@ -1,9 +1,3 @@
-.container {
-  /*margin: 10px auto 0;*/
-  display: flex;
-  align-items: flex-end;
-}
-
 nav ul {
   list-style: none;
   text-align: center;
@@ -15,7 +9,7 @@ nav ul li a {
   display: block;
   padding: 15px;
   text-decoration: none;
-  color: #a8a878;
+  color: #aaa;
   font-weight: 800;
   text-transform: uppercase;
   margin: 0 10px;
@@ -26,14 +20,18 @@ nav ul li a:before {
   transition: all 0.5s;
 }
 nav ul li a:hover {
-  color: #a8a923;
+  color: #555;
 }
 
+/* By Dominik Biedebach @domobch */
+
 /* stroke */
-nav.stroke ul li a {
+nav.stroke ul li a,
+nav.fill ul li a {
   position: relative;
 }
-nav.stroke ul li a:after {
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -42,8 +40,8 @@ nav.stroke ul li a:after {
   width: 0;
   content: '.';
   color: transparent;
-  background: #a8a923;
-  height: 3px;
+  background: #333;
+  height: 1px;
 }
 nav.stroke ul li a:hover:after {
   width: 100%;

@@ -1,5 +1,11 @@
 .container {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   /*border: 1px solid darkgrey;*/
+=======
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+>>>>>>> origin/main
 }
