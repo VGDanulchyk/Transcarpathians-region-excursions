@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './HeaderMenu.module.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const HeaderMenu = () => {
   return (
@@ -9,10 +9,14 @@ const HeaderMenu = () => {
       <nav className={styles.stroke}>
         <ul>
           <li>
-            <Link to="/home">Головна</Link>
+            <NavLink to="/home" activeClassName={styles.active}>
+              Головна
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">Про Себе</Link>
+            <NavLink to="/about" activeClassName={styles.active}>
+              Про Себе
+            </NavLink>
           </li>
           <li>
             <a href="#">Екскурсії</a>
