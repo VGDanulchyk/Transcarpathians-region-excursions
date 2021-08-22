@@ -7,13 +7,13 @@ import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/components/navigation/navigation.min.css';
 
-import './AutoSwiper.css';
+import './AutoSwiper.scss';
 
 import logo from '../../img/logo.png';
 
 // import Swiper core and required modules
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper/core';
-import styles from '../Logo/Logo.module.css';
+import styles from '../Logo/Logo.module.scss';
 
 // install Swiper modules
 SwiperCore.use([Autoplay, Pagination, Navigation]);

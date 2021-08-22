@@ -1,15 +1,22 @@
 import React from 'react';
-import Logo from './components/Logo/Logo';
-import HeaderSection from './components/HeaderSection/HeaderSection';
-import HeaderMenu from './components/HeaderMenu/HeaderMenu';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <HeaderSection>
-        <Logo />
-        <HeaderMenu />
-      </HeaderSection>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <AboutMe />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

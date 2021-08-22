@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 10px;
+}
+
 nav ul {
   list-style: none;
   text-align: center;
@@ -22,8 +28,6 @@ nav ul li a:before {
 nav ul li a:hover {
   color: #555;
 }
-
-/* By Dominik Biedebach @domobch */
 
 /* stroke */
 nav.stroke ul li a,
