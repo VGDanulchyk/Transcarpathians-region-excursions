@@ -4,6 +4,7 @@ import HeaderSection from '../components/HeaderSection/HeaderSection';
 import HeaderMenu from '../components/HeaderMenu/HeaderMenu';
 
 import AutoSwiper from '../components/AutoSwiper/AutoSwiper';
+import ProfileSection from '../components/ProfileSection/ProfileSection';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <HeaderMenu />
       </HeaderSection>
       <AutoSwiper />
+      <ProfileSection />
     </div>
   );
 }

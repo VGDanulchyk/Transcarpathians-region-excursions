@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../components/Logo/Logo';
 import HeaderMenu from '../components/HeaderMenu/HeaderMenu';
 import HeaderSection from '../components/HeaderSection/HeaderSection';
+import ProfileSection from '../components/ProfileSection/ProfileSection';
 
 const AboutMe = () => {
   return (
@@ -10,7 +11,7 @@ const AboutMe = () => {
         <Logo />
         <HeaderMenu />
       </HeaderSection>
-      <h1>About me!!!</h1>
+      <ProfileSection />
     </div>
   );
 };

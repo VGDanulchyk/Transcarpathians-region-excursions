@@ -22,10 +22,10 @@ export default function AutoSwiper() {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={40}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 2600,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -35,13 +35,25 @@ export default function AutoSwiper() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className={styles.logo} src={logo} alt="logo" />
+          <img
+            // className={styles.logo}
+            src="https://images.unsplash.com/photo-1469212044023-0e55b4b9745a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80"
+            alt="logo"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img className={styles.logo} src={logo} alt="logo" />
+          <img
+            // className={styles.logo}
+            src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80"
+            alt="logo"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img className={styles.logo} src={logo} alt="logo" />
+          <img
+            // className={styles.logo}
+            src="https://images.unsplash.com/photo-1586600822178-26dec0f653a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=80"
+            alt="logo"
+          />
         </SwiperSlide>
       </Swiper>
     </>
