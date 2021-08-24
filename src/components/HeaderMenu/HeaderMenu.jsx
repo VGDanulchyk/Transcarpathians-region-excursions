@@ -19,7 +19,9 @@ const HeaderMenu = () => {
             </NavLink>
           </li>
           <li>
-            <a href="#">Екскурсії</a>
+            <NavLink to="/excursions" activeClassName={styles.active}>
+              Екскурсії
+            </NavLink>
           </li>
           <li>
             <a href="#">Контакти</a>
