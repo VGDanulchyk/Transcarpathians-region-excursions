@@ -11,8 +11,8 @@ const ExcursionItem = props => {
         <li className={styles.itemBlockText}>
           <h3 className={styles.itemTitle}>{props.excursion.title}</h3>
           <p className={styles.itemText}>{props.excursion.text}</p>
-          <h5>{props.excursion.time}</h5>
-          <h5>{props.excursion.price}</h5>
+          <h5 className={styles.description}>{props.excursion.time}</h5>
+          <h5 className={styles.description}>{props.excursion.price}</h5>
         </li>
       </ul>
     </article>

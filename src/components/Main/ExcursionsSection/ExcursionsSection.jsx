@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ExcursionItem from '../ExcursionItem/ExcursionItem';
+import ExcursionItem from './ExcursionItem/ExcursionItem';
 import styles from './ExcursionsSection.module.scss';
 
 const ExcursionsSection = () => {

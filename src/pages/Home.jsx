@@ -1,10 +1,10 @@
 import React from 'react';
-import Logo from '../components/Logo/Logo';
-import HeaderSection from '../components/HeaderSection/HeaderSection';
-import HeaderMenu from '../components/HeaderMenu/HeaderMenu';
+import Logo from '../components/Header/HeaderSection/Logo/Logo';
+import HeaderSection from '../components/Header/HeaderSection/HeaderSection';
+import HeaderMenu from '../components/Header/HeaderSection/HeaderMenu/HeaderMenu';
 
-import AutoSwiper from '../components/AutoSwiper/AutoSwiper';
-import ProfileSection from '../components/ProfileSection/ProfileSection';
+import AutoSwiper from '../components/Main/AutoSwiper/AutoSwiper';
+import ProfileSection from '../components/Main/ProfileSection/ProfileSection';
 
 function Home() {
   return (

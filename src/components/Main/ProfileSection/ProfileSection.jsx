@@ -1,6 +1,6 @@
 import React from 'react';
-import ProfilePhoto from '../ProfilePhoto/ProfilePhoto';
-import ProfileText from '../ProfileText/ProfileText';
+import ProfilePhoto from './ProfilePhoto/ProfilePhoto';
+import ProfileText from './ProfileText/ProfileText';
 import styles from './ProfileSection.module.scss';
 
 const ProfileSection = () => {
