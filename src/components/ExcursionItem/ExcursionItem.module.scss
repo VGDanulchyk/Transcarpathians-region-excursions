@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex: 0 1 48%;
+  justify-content: center;
+  margin: 10px auto;
+
+  .row {
+    display: flex;
+    list-style: none;
+    //background: #f1efef;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+    .itemBlockImg {
+      .itemImg {
+        max-width: 300px;
+        width: 100%;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px,
+          rgba(17, 17, 26, 0.1) 0px 24px 80px;
+      }
+    }
+
+    .itemBlockText {
+      max-width: 300px;
+      width: 100%;
+      padding: 15px;
+      .itemTitle {
+        text-align: center;
+      }
+      .itemText {
+      }
+    }
+  }
+}

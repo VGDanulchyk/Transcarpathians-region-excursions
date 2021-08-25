@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import ExcursionItem from '../Excursion/Excursion';
+import ExcursionItem from '../ExcursionItem/ExcursionItem';
+import styles from './ExcursionsSection.module.scss';
 
 const ExcursionsSection = () => {
   const [excursions, setExcursions] = useState([
@@ -11,11 +12,7 @@ const ExcursionsSection = () => {
         'Пізнавальна екскурсія до однієї з вершин Боржавського масиву, ' +
         'а саме гори Плай, де знаходяться діюча радіорелейна та метеостанція,' +
         ' Висота 1330 метрів над рівнем моря. В 60-ті роки ХХ століття на метеостанції' +
-        ' працював Герой України - Вячеслав Чорновіл. Колоритна і барвиста природа насичена' +
-        ' живими соками отчої землі. Шелест трав, гомін лісів, дзюрчання потічків, велич ' +
-        'гір і полонин - все це незмінний атрибут походу. Верховинська поетеса Софія Малильо' +
-        ' про це говорила: На горизонті - гори. Карпати дивляться в небесну глибину. Потоки гомінкі,' +
-        ' туманні звори, лісів заснулих тихії собори ревниво бережуть загадок таїну.',
+        ' працював Герой України - Вячеслав Чорновіл.',
       time: 'Тривалість походу: 5-7 годин',
       price: 'Ціна: 800 грн',
     },
@@ -76,11 +73,11 @@ const ExcursionsSection = () => {
   ]);
 
   return (
-    <div>
+    <section className={styles.container}>
       {excursions.map(excursion => (
         <ExcursionItem excursion={excursion} key={excursion.id} />
       ))}
-    </div>
+    </section>
   );
 };
 

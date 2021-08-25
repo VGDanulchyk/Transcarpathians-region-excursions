@@ -6,8 +6,6 @@ import HeaderMenu from '../components/HeaderMenu/HeaderMenu';
 import AutoSwiper from '../components/AutoSwiper/AutoSwiper';
 import ProfileSection from '../components/ProfileSection/ProfileSection';
 
-import ExcursionsSection from '../components/ExcursionsSection/ExcursionsSection';
-
 function Home() {
   return (
     <div>
@@ -17,7 +15,6 @@ function Home() {
       </HeaderSection>
       <AutoSwiper />
       <ProfileSection />
-      <ExcursionsSection />
     </div>
   );
 }
