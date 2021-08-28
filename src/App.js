@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import './App.scss';
 import Excursions from './pages/Excursions';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/excursions">
             <Excursions />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -24,6 +24,11 @@ const HeaderMenu = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink to="/gallery" activeClassName={styles.active}>
+              Галерея
+            </NavLink>
+          </li>
+          <li>
             <a href="#">Контакти</a>
           </li>
         </ul>
