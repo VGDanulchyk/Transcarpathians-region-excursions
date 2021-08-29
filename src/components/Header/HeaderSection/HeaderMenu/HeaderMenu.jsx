@@ -29,7 +29,9 @@ const HeaderMenu = () => {
             </NavLink>
           </li>
           <li>
-            <a href="#">Контакти</a>
+            <NavLink to="/contacts" activeClassName={styles.active}>
+              Контакти
+            </NavLink>
           </li>
         </ul>
       </nav>

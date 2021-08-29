@@ -5,10 +5,12 @@ import styles from './ProfileSection.module.scss';
 
 const ProfileSection = () => {
   return (
-    <div className={styles.container}>
-      <ProfilePhoto />
-      <ProfileText />
-    </div>
+    <section className={styles.container}>
+      <article className={styles.itemContainer}>
+        <ProfilePhoto />
+        <ProfileText />
+      </article>
+    </section>
   );
 };
 

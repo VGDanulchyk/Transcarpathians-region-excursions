@@ -34,21 +34,21 @@ export default function AutoSwiper() {
         <SwiperSlide>
           <img
             // className={styles.logo}
-            src="https://images.wallpaperscraft.ru/image/gory_sneg_zasnezhennyj_180213_2560x1080.jpg   "
+            src="https://destinations.com.ua/storage/images/Articles17/17November/Carpathian_Mountains_in_Ukraine/Cart_National_Nature_Park.jpg"
             alt="logo"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             // className={styles.logo}
-            src="https://images.wallpaperscraft.ru/image/gory_vershiny_ozero_170485_2560x1080.jpg"
+            src="https://destinations.com.ua/storage/images/Articles17/17November/Carpathian_Mountains_in_Ukraine/Carp_National_Nature_Park.jpg"
             alt="logo"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             // className={styles.logo}
-            src="https://images.wallpaperscraft.ru/image/gory_reka_sneg_zima_93245_2560x1080.jpg"
+            src="https://destinations.com.ua/storage/images/Articles17/17November/Carpathian_Mountains_in_Ukraine/Kolochava.jpg"
             alt="logo"
           />
         </SwiperSlide>

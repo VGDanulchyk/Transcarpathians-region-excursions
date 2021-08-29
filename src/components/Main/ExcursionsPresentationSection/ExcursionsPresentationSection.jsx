@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 const ExcursionsPresentationSection = () => {
   return (
     <section className={styles.wrapper}>
+      <h2 className={styles.titleText}>Екскурсії</h2>
       <article className={styles.itemContainer}>
         <ExcursionPresentationItem
           excursion={{

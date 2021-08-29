@@ -1,12 +1,16 @@
 .textContainer {
   margin: 0 30px;
 
-  //background: #2be234;
-  h1 {
+  .titleText {
+    color: #a8a878;
+    text-transform: uppercase;
     text-align: center;
-    padding-bottom: 20px;
+    text-shadow: 2px 3px 8px #a8a878;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 20px;
+    text-indent: 10px;
+    margin: 5px auto;
+    line-height: 1.6;
   }
 }

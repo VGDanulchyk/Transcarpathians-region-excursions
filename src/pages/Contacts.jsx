@@ -1,23 +1,19 @@
 import React from 'react';
+import HeaderSection from '../components/Header/HeaderSection/HeaderSection';
 import Logo from '../components/Header/HeaderSection/Logo/Logo';
 import HeaderMenu from '../components/Header/HeaderSection/HeaderMenu/HeaderMenu';
-import HeaderSection from '../components/Header/HeaderSection/HeaderSection';
-import PhotoGallerySection from '../components/Main/PhotoGallerySection/PhotoGallerySection';
 import FooterSection from '../components/FooterSection/FooterSection';
 
-const Gallery = () => {
+const Contacts = () => {
   return (
-    <section>
+    <div>
       <HeaderSection>
         <Logo />
         <HeaderMenu />
       </HeaderSection>
-      <article>
-        <PhotoGallerySection />
-      </article>
       <FooterSection />
-    </section>
+    </div>
   );
 };
 
-export default Gallery;
+export default Contacts;

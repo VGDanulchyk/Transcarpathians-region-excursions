@@ -5,6 +5,7 @@ import AboutMe from './pages/AboutMe';
 import './App.scss';
 import Excursions from './pages/Excursions';
 import Gallery from './pages/Gallery';
+import Contacts from './pages/Contacts';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/gallery">
             <Gallery />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
           </Route>
         </Switch>
       </BrowserRouter>

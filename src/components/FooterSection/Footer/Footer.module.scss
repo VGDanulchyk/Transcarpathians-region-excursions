@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  .footItem {
+    margin: 10px auto;
+    padding: 5px;
+
+    .title {
+      padding: 10px 0;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .phoneText {
+      padding: 5px 0;
+
+      .phone {
+        text-decoration: none;
+        color: #a8a878;
+        font-weight: 700;
+      }
+    }
+
+    .faceIcon {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+  }
+}

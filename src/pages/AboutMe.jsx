@@ -3,6 +3,7 @@ import Logo from '../components/Header/HeaderSection/Logo/Logo';
 import HeaderMenu from '../components/Header/HeaderSection/HeaderMenu/HeaderMenu';
 import HeaderSection from '../components/Header/HeaderSection/HeaderSection';
 import ProfileSection from '../components/Main/ProfileSection/ProfileSection';
+import FooterSection from '../components/FooterSection/FooterSection';
 
 const AboutMe = () => {
   return (
@@ -12,6 +13,7 @@ const AboutMe = () => {
         <HeaderMenu />
       </HeaderSection>
       <ProfileSection />
+      <FooterSection />
     </div>
   );
 };
