@@ -1,9 +1,31 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
 
-import styles from './PhotoGallery.module.scss';
-
 const IMAGES = [
+  {
+    src: 'https://doc-0o-0o-docs.googleusercontent.com/docs/securesc/0n4hotemhck39al7hq74d5j7foh708t9/obmpk3cr618qdbn2svm19vq01s5sufd6/1630322925000/11561757738241160638/03937988734919455215/1tDiP4H70xk48D71jVr_EoHYfjjjnpLlP?e=download&authuser=0',
+    thumbnail:
+      'https://doc-0o-0o-docs.googleusercontent.com/docs/securesc/0n4hotemhck39al7hq74d5j7foh708t9/obmpk3cr618qdbn2svm19vq01s5sufd6/1630322925000/11561757738241160638/03937988734919455215/1tDiP4H70xk48D71jVr_EoHYfjjjnpLlP?e=download&authuser=0',
+  },
+
+  {
+    src: 'https://doc-0s-0o-docs.googleusercontent.com/docs/securesc/0n4hotemhck39al7hq74d5j7foh708t9/5pvkr5rvnbjqs3csm27m9ooc1fh6f1lp/1630322925000/11561757738241160638/03937988734919455215/1ZiPJYCilPabmqQkwosLHblSk4CyltorT?e=download&authuser=0',
+    thumbnail:
+      'https://doc-0s-0o-docs.googleusercontent.com/docs/securesc/0n4hotemhck39al7hq74d5j7foh708t9/5pvkr5rvnbjqs3csm27m9ooc1fh6f1lp/1630322925000/11561757738241160638/03937988734919455215/1ZiPJYCilPabmqQkwosLHblSk4CyltorT?e=download&authuser=0',
+  },
+
+  {
+    src: 'https://mail.google.com/mail/u/0?ui=2&ik=213d62e8c1&attid=0.11&permmsgid=msg-f:1709237517283092449&th=17b86e774e6de7e1&view=att&disp=safe&realattid=f_kst418l55',
+    thumbnail:
+      'https://mail.google.com/mail/u/0?ui=2&ik=213d62e8c1&attid=0.11&permmsgid=msg-f:1709237517283092449&th=17b86e774e6de7e1&view=att&disp=safe&realattid=f_kst418l55',
+  },
+
+  {
+    src: 'https://mail.google.com/mail/u/0?ui=2&ik=213d62e8c1&attid=0.10&permmsgid=msg-f:1709237517283092449&th=17b86e774e6de7e1&view=att&disp=safe&realattid=f_kst418lw6',
+    thumbnail:
+      'https://mail.google.com/mail/u/0?ui=2&ik=213d62e8c1&attid=0.10&permmsgid=msg-f:1709237517283092449&th=17b86e774e6de7e1&view=att&disp=safe&realattid=f_kst418lw6',
+  },
+
   {
     src: 'https://mail.google.com/mail/u/0?ui=2&ik=213d62e8c1&attid=0.8&permmsgid=msg-f:1709236928983261863&th=17b86dee5506e2a7&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_RDH6wghPZHt0xWovWh7nqxor9KB36UPfA9y5Irb-5w1DYbtjkqDn3e2QeWFby52w18eCY--e3JUDgi5On7duVxNp2LJ_aB-yoflBWFHnLgWZowoK6PJs8Z9M&disp=emb&realattid=ii_kst4p44f0',
     thumbnail:
@@ -127,7 +149,6 @@ const PhotoGallery = () => {
         display: 'block',
         minHeight: '1px',
         width: '100%',
-        border: '1px solid #ddd',
         overflow: 'auto',
       }}
     >
@@ -137,6 +158,11 @@ const PhotoGallery = () => {
         enableLightbox={true}
         backdropClosesModal
         enableImageSelection={false}
+        style={{
+          display: 'flex',
+          flexwrap: 'wrap',
+          justifycontent: 'center',
+        }}
       />
     </div>
   );
