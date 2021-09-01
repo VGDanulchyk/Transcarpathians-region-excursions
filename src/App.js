@@ -12,21 +12,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <AboutMe />
-          </Route>
-          <Route path="/excursions">
-            <Excursions />
-          </Route>
-          <Route path="/gallery">
-            <Gallery />
-          </Route>
-          <Route path="/contacts">
-            <Contacts />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={AboutMe} />
+          <Route path="/excursions" component={Excursions} />
+          <Route path="/gallery" component={Gallery} />
+          <Route path="/contacts" component={Contacts} />
         </Switch>
       </BrowserRouter>
     </div>

@@ -2,11 +2,15 @@ import React from 'react';
 import ExcursionPresentationItem from './ExcursionPresentationItem/ExcursionPresentationItem';
 import styles from './ExcursionsPresentationSection.module.scss';
 import Button from '../Button/Button';
+import { NavLink } from 'react-router-dom';
 
 const ExcursionsPresentationSection = () => {
   return (
     <section className={styles.wrapper}>
-      <h2 className={styles.titleText}>Екскурсії</h2>
+      <NavLink to="/excursions" className={styles.titleLink}>
+        <h2 className={styles.titleText}>Екскурсії</h2>
+      </NavLink>
+
       <article className={styles.itemContainer}>
         <ExcursionPresentationItem
           excursion={{

@@ -9,7 +9,7 @@ const HeaderMenu = () => {
       <nav className={styles.stroke}>
         <ul>
           <li>
-            <NavLink to="/home" activeClassName={styles.active}>
+            <NavLink exact to="/" activeClassName={styles.active}>
               Головна
             </NavLink>
           </li>
