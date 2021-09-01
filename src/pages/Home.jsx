@@ -10,7 +10,7 @@ import FooterSection from '../components/FooterSection/FooterSection';
 
 function Home() {
   return (
-    <div>
+    <section>
       <HeaderSection>
         <Logo />
         <HeaderMenu />
@@ -19,7 +19,7 @@ function Home() {
       <ProfileSection />
       <ExcursionsPresentationSection />
       <FooterSection />
-    </div>
+    </section>
   );
 }
 

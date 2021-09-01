@@ -6,6 +6,7 @@ import './App.scss';
 import Excursions from './pages/Excursions';
 import Gallery from './pages/Gallery';
 import Contacts from './pages/Contacts';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/excursions" component={Excursions} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/contacts" component={Contacts} />
+          <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
     </div>

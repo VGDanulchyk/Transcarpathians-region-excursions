@@ -46,7 +46,7 @@ const ExcursionsPresentationSection = () => {
         />
       </article>
 
-      <Button button={{ name: 'Більше Екскурсій' }} />
+      <Button button={{ name: 'Більше Екскурсій', path: '/excursions' }} />
     </section>
   );
 };
