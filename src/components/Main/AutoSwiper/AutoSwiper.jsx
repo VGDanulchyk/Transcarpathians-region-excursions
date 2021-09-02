@@ -19,7 +19,7 @@ export default function AutoSwiper() {
   return (
     <>
       <Swiper
-        spaceBetween={40}
+        spaceBetween={10}
         centeredSlides={true}
         autoplay={{
           delay: 2600,

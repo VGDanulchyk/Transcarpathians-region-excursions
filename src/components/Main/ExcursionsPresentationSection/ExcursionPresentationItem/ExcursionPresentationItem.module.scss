@@ -34,3 +34,13 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .row {
+    padding: 15px 0;
+
+    .itemBlockText {
+      padding: 15px 0;
+    }
+  }
+}

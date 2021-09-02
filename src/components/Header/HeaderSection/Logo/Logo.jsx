@@ -8,7 +8,7 @@ const Logo = () => {
     <div className={styles.container}>
       <div>
         <NavLink to="/">
-          <img src={logo} alt="logo" />
+          <img className={styles.img} src={logo} alt="logo" />
         </NavLink>
       </div>
     </div>

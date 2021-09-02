@@ -9,7 +9,7 @@ const NotFound = () => {
     <section className="notFoundContainer">
       <img src={notFound} alt="Not found photo" className="notFoundImg" />
       <h3 className="notFoundText">
-        Йоой!!! Здається ви заблукали, щоб повернутися, нитисніть
+        Здається ви заблукали, щоб повернутися, нитисніть
         <Link to="/" className="notFoundLink">
           <Button button={{ name: 'На головну сторінку', path: '/' }} />
         </Link>
