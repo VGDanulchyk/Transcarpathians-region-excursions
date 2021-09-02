@@ -15,4 +15,15 @@
     top: 0;
     left: 0;
   }
+
+  .container::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    background-color: white;
+    z-index: 16;
+  }
 }

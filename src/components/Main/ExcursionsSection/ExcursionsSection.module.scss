@@ -4,3 +4,11 @@
   margin: 15px auto;
   text-decoration: none;
 }
+
+@media (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+}

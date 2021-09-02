@@ -8,11 +8,13 @@
 
 @media (max-width: 900px) {
   .container {
+    z-index: 17;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     .img {
+      z-index: 999;
       max-width: 250px;
       width: 100%;
     }
