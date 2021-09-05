@@ -1,6 +1,6 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-// import './PhotoGallery.css';
+import './PhotoGallery.css';
 
 const images = [
   {
