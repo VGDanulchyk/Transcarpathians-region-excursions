@@ -5,7 +5,11 @@
 }
 
 .menuIcon {
-  display: none;
+  transform: translateX(-100%);
+}
+
+.menuIcon.menuActive {
+  transform: translateX(0);
 }
 
 .active {
