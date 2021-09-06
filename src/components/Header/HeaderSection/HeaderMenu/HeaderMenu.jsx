@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styles from './HeaderMenu.module.scss';
 import { NavLink } from 'react-router-dom';
 
-const HeaderMenu = ({ active, setActive }) => {
+const HeaderMenu = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
   return (
     <div className={styles.container}>
+      {/*<div className={styles.menuIcon} onClick={() => setActive(!active)}>*/}
       <div
-        className={active ? 'styles.menuIcon styles.menuActive' : 'styles.menuIcon'}
-        onClick={() => setActive(!active)}
+        className={menuActive ? {styles.menuIcon} : {styles.menuIcon}}
+        onClick={() => setMenuActive(!menuActive)}
       >
         <span></span>
       </div>
