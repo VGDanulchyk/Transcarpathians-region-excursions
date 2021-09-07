@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "concurrently": "^6.2.1",
+    "json-server": "^0.16.3",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -18,10 +20,12 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && json-server --watch -p 5000 db.json",
+    "dev": "concurrently --kill-others \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json-server": "json-server --watch -p 4000 db.json"
   },
   "eslintConfig": {
     "extends": [

@@ -4,21 +4,21 @@ import styles from './HeaderMenu.module.scss';
 import { NavLink } from 'react-router-dom';
 
 const HeaderMenu = () => {
-  const [menuActive, setMenuActive] = useState(false);
+  const [active, setActive] = useState(false);
+
+  const onMenuHandler = () => {
+    setActive(prev => !prev);
+  };
 
   return (
     <div className={styles.container}>
-      {/*<div className={styles.menuIcon} onClick={() => setActive(!active)}>*/}
-      <div
-        className={menuActive ? {styles.menuIcon} : {styles.menuIcon}}
-        onClick={() => setMenuActive(!menuActive)}
-      >
-        <span></span>
+      <div className={styles.menuIcon}>
+        <span onClick={onMenuHandler} />
       </div>
 
-      <nav className={styles.menuBody}>
+      <nav className={active ? styles.menuBody : styles.menuBodyNone}>
         <ul className={styles.menuList}>
-          <li>
+          <li className={styles.menuListItem}>
             <NavLink exact to="/" className={styles.menuLink} activeClassName={styles.active}>
               Головна
             </NavLink>
