@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './HeaderSection.module.scss';
 import Logo from './Logo/Logo';
 import HeaderMenu from './HeaderMenu/HeaderMenu';

@@ -12,8 +12,8 @@ const HeaderMenu = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.menuIcon}>
-        <span onClick={onMenuHandler} />
+      <div className={active ? styles.menuActive : styles.menuIcon} onClick={onMenuHandler}>
+        <span />
       </div>
 
       <nav className={active ? styles.menuBody : styles.menuBodyNone}>
