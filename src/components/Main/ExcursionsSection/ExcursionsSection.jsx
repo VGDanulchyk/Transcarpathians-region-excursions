@@ -2,11 +2,18 @@ import React, { useState } from 'react';
 import ExcursionItem from './ExcursionItem/ExcursionItem';
 import styles from './ExcursionsSection.module.scss';
 
+import Play from '../../../img/MainImg/ExcursionImg/Play.jpg';
+import VV2 from '../../../img/MainImg/ExcursionImg/VV2.jpg';
+import Gemba from '../../../img/MainImg/ExcursionImg/Gemba.jpg';
+import Stoy from '../../../img/MainImg/ExcursionImg/Stoy.jpg';
+import Pikyi from '../../../img/MainImg/ExcursionImg/Pikyi.jpg';
+import Beskidy from '../../../img/MainImg/ExcursionImg/Beskidy.jpg';
+
 const ExcursionsSection = () => {
   const [excursions, setExcursions] = useState([
     {
       id: 1,
-      img: 'http://podobovec.com/img/Play.jpg',
+      img: Play,
       title: 'Маршрут на гору "Плай"',
       text:
         'Пізнавальна екскурсія до однієї з вершин Боржавського масиву, ' +
@@ -19,7 +26,7 @@ const ExcursionsSection = () => {
 
     {
       id: 2,
-      img: 'http://podobovec.com/img/VV2.jpg',
+      img: VV2,
       title: 'Маршрут на гору "Великий Верх"',
       text:
         'Надзвичайно цікавий, пізнавальний похід до однієї із найвищих вершин Боржавського хребта,' +
@@ -32,7 +39,7 @@ const ExcursionsSection = () => {
 
     {
       id: 3,
-      img: 'http://podobovec.com/img/Gemba.jpg',
+      img: Gemba,
       title: 'Маршрут на гору "Гембу"',
       text:
         'Захоплююча мандрівка через села Подобовець та Пилипець до вершини Боржавського хребта' +
@@ -45,7 +52,7 @@ const ExcursionsSection = () => {
 
     {
       id: 4,
-      img: 'http://podobovec.com/img/Stoy.jpg',
+      img: Stoy,
       title: 'Маршрут на гору "Стой"',
       text:
         'Неповторна експедиція до найвищої вершини Боржавського масиву 1681 метр над рівнем моря.' +
@@ -58,16 +65,30 @@ const ExcursionsSection = () => {
 
     {
       id: 5,
-      img: 'http://podobovec.com/img/Pikyi.jpg',
+      img: Pikyi,
       title: 'Маршрут на гору "Пікуй"',
       text:
         'Автобусно-пішохідний маршрут. Незабутня екскурсія-похід до найвищої вершини' +
         ' Львівської області, що знаходиться на висоті 1408 метрів над рівнем моря.' +
-        ' Знакова гора, цікаві легенди, цікаве історичне минуле. В минулому столітті по вершині' +
-        ' гори також проходив кордон між державами. Безліч позитивних вражень, захоплюючі природні' +
+        ' В минулому столітті по вершині гори також проходив кордон між державами. ' +
+        'Безліч позитивних вражень, захоплюючі природні' +
         ' ландшафти, легенди оповідання, гірські потічки, царство пралісів і ще багато приємних' +
         ' відкриттів чекає на Вас.',
       time: 'Тривалість походу: 10-14 годин',
+      price: 'Ціна: 1000 грн',
+    },
+
+    {
+      id: 6,
+      img: Beskidy,
+      title: 'Маршрут по "Бескидах"',
+      text:
+        'Унікальна подорож до Верховинського вододільного хребта.' +
+        ' Місця де колись проходив кордон між Чехословаччиною та Польщею,' +
+        ' Угорщиною та СРСР. Знайомство із історією будівництва Бескидської ' +
+        "залізниці та Карпатських тунелів, що розпочалось в 1872 році і з'єднало" +
+        ' Відень та Львів.',
+      time: 'Тривалість походу: 8-10 годин',
       price: 'Ціна: 1000 грн',
     },
   ]);

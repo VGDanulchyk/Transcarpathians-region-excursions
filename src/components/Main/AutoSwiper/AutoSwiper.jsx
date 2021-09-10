@@ -1,18 +1,16 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import photo1 from '../../../img/MainImg/MainSwiperImg/PhotoSwiper1.jpg';
+import photo2 from '../../../img/MainImg/MainSwiperImg/PhotoSwiper2.jpg';
+import photo3 from '../../../img/MainImg/MainSwiperImg/PhotoSwiper3.jpg';
 
-// Import Swiper styles
 import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/components/navigation/navigation.min.css';
 
-import './AutoSwiper.scss';
-
-// import Swiper core and required modules
+import './AutoSwiper.css';
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper/core';
 
-// install Swiper modules
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 export default function AutoSwiper() {
@@ -23,34 +21,21 @@ export default function AutoSwiper() {
         centeredSlides={true}
         autoplay={{
           delay: 2600,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        className="mySwiper"
       >
         <SwiperSlide>
-          <img
-            // className={styles.logo}
-            src="https://destinations.com.ua/storage/images/Articles17/17November/Carpathian_Mountains_in_Ukraine/Cart_National_Nature_Park.jpg"
-            alt="logo"
-          />
+          <img src={photo1} alt="logo" />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            // className={styles.logo}
-            src="https://destinations.com.ua/storage/images/Articles17/17November/Carpathian_Mountains_in_Ukraine/Carp_National_Nature_Park.jpg"
-            alt="logo"
-          />
+          <img src={photo2} alt="logo" />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            // className={styles.logo}
-            src="https://destinations.com.ua/storage/images/Articles17/17November/Carpathian_Mountains_in_Ukraine/Kolochava.jpg"
-            alt="logo"
-          />
+          <img src={photo3} alt="logo" />
         </SwiperSlide>
       </Swiper>
     </>

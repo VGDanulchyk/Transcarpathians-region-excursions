@@ -2,6 +2,11 @@ import React from 'react';
 import ExcursionPresentationItem from './ExcursionPresentationItem/ExcursionPresentationItem';
 import styles from './ExcursionsPresentationSection.module.scss';
 import Button from '../Button/Button';
+
+import Play from '../../../img/MainImg/ExcursionImg/Play.jpg';
+import VV2 from '../../../img/MainImg/ExcursionImg/VV2.jpg';
+import Gemba from '../../../img/MainImg/ExcursionImg/Gemba.jpg';
+
 import { NavLink } from 'react-router-dom';
 
 const ExcursionsPresentationSection = () => {
@@ -14,7 +19,7 @@ const ExcursionsPresentationSection = () => {
       <article className={styles.itemContainer}>
         <ExcursionPresentationItem
           excursion={{
-            img: 'http://podobovec.com/img/Play.jpg',
+            img: Play,
             title: 'Маршрут на гору "Плай"',
             text:
               'Пізнавальна екскурсія до однієї з вершин Боржавського масиву,' +
@@ -25,7 +30,7 @@ const ExcursionsPresentationSection = () => {
         />
         <ExcursionPresentationItem
           excursion={{
-            img: 'http://podobovec.com/img/VV2.jpg',
+            img: VV2,
             title: 'Маршрут на гору "Великий Верх"',
             text:
               'Надзвичайно цікавий похід до однієї із найвищих вершин Боржавського хребта,' +
@@ -36,7 +41,7 @@ const ExcursionsPresentationSection = () => {
         />
         <ExcursionPresentationItem
           excursion={{
-            img: 'http://podobovec.com/img/Gemba.jpg',
+            img: Gemba,
             title: 'Маршрут на гору "Гембу"',
             text:
               'Захоплююча мандрівка через села Подобовець та Пилипець до вершини Боржавського хребта' +
