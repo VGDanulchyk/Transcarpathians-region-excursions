@@ -7,6 +7,7 @@ import AutoSwiper from '../components/Main/AutoSwiper/AutoSwiper';
 import ProfileSection from '../components/Main/ProfileSection/ProfileSection';
 import ExcursionsPresentationSection from '../components/Main/ExcursionsPresentationSection/ExcursionsPresentationSection';
 import FooterSection from '../components/FooterSection/FooterSection';
+import Timer from '../components/Timer';
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       </HeaderSection>
       <AutoSwiper />
       <ProfileSection />
+      <Timer />
       <ExcursionsPresentationSection />
       <FooterSection />
     </section>
