@@ -1,5 +1,6 @@
 import React from 'react';
 import ExcursionPresentationItem from './ExcursionPresentationItem/ExcursionPresentationItem';
+import { connect } from 'react-redux';
 import styles from './ExcursionsPresentationSection.module.scss';
 import Button from '../Button/Button';
 
@@ -9,7 +10,7 @@ import Gemba from '../../../img/MainImg/ExcursionImg/Gemba.jpg';
 
 import { NavLink } from 'react-router-dom';
 
-const ExcursionsPresentationSection = () => {
+const ExcursionsPresentationSection = excursionn => {
   return (
     <section className={styles.wrapper}>
       <NavLink to="/excursions" className={styles.titleLink}>
@@ -56,4 +57,8 @@ const ExcursionsPresentationSection = () => {
   );
 };
 
-export default ExcursionsPresentationSection;
+const mapStateToProps = state => ({
+  excursionn: state.trips,
+});
+
+export default connect(mapStateToProps)(ExcursionsPresentationSection);

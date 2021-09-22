@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import ExcursionItem from './ExcursionItem/ExcursionItem';
 import styles from './ExcursionsSection.module.scss';
 
@@ -101,5 +102,13 @@ const ExcursionsSection = () => {
     </section>
   );
 };
+
+// const mapStateToProps = state => ({
+//   return {
+//     excursions: state.
+//   }
+// });
+
+// export default connect(mapStateToProps)(ExcursionsSection);
 
 export default ExcursionsSection;
