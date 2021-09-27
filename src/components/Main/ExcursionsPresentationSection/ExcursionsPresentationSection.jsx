@@ -10,7 +10,7 @@ import Gemba from '../../../img/MainImg/ExcursionImg/Gemba.jpg';
 
 import { NavLink } from 'react-router-dom';
 
-const ExcursionsPresentationSection = excursionn => {
+const ExcursionsPresentationSection = () => {
   return (
     <section className={styles.wrapper}>
       <NavLink to="/excursions" className={styles.titleLink}>
