@@ -1,19 +1,21 @@
 import { createReducer } from '@reduxjs/toolkit';
-import excursionsPresentationAction from './excursionsPresentationAction';
+import excursionsAction from './excursionsAction';
 
 export default createReducer(
   {
     loading: false,
     trips: [],
   },
+
   {
-    [excursionsPresentationAction.getExcursionsPresentationRequest]: state => {
+    [excursionsAction.getExcursionsRequest]: state => {
       return {
         ...state,
         loading: true,
       };
     },
-    [excursionsPresentationAction.getExcursionsPresentationSuccess]: (state, action) => {
+
+    [excursionsAction.getExcursionsSuccess]: (state, action) => {
       return {
         ...state,
         trips: action.payload,

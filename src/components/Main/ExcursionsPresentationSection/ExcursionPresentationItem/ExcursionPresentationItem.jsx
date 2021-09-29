@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import styles from './ExcursionPresentationItem.module.scss';
+import loadStyles from '../../ProfileSection/Profile/Profile.module.scss';
 
 class ExcursionPresentationItem extends Component {
-  componentDidMount() {
-    this.props.onGetProfileInfo();
-  }
-
   render() {
-    const { title, text, loading } = this.props;
+    const {
+      loading,
+      excursion: { img, title, text },
+    } = this.props;
 
     if (loading) {
       return (
-        <div className={styles.loadingStyle}>
+        <div className={loadStyles.loadingStyle}>
           <h2>Loading...</h2>
         </div>
       );
@@ -21,11 +21,11 @@ class ExcursionPresentationItem extends Component {
       <article className={styles.container}>
         <ul className={styles.row}>
           <li className={styles.itemBlockImg}>
-            <img className={styles.itemImg} src={props.excursion.img} alt="Excursion photo" />
+            <img className={styles.itemImg} src={img} alt="Excursion photo" />
           </li>
           <li className={styles.itemBlockText}>
-            <h3 className={styles.itemTitle}>{props.excursion.title}</h3>
-            <p className={styles.itemText}>{props.excursion.text}</p>
+            <h3 className={styles.itemTitle}>{title}</h3>
+            <p className={styles.itemText}>{text}</p>
           </li>
         </ul>
       </article>
@@ -34,21 +34,3 @@ class ExcursionPresentationItem extends Component {
 }
 
 export default ExcursionPresentationItem;
-
-// const ExcursionPresentationItem = props => {
-//   return (
-//       <article className={styles.container}>
-//         <ul className={styles.row}>
-//           <li className={styles.itemBlockImg}>
-//             <img className={styles.itemImg} src={props.excursion.img} alt="Excursion photo" />
-//           </li>
-//           <li className={styles.itemBlockText}>
-//             <h3 className={styles.itemTitle}>{props.excursion.title}</h3>
-//             <p className={styles.itemText}>{props.excursion.text}</p>
-//           </li>
-//         </ul>
-//       </article>
-//   );
-// };
-//
-// export default ExcursionPresentationItem;

@@ -10,6 +10,4 @@ const getExcursions = () => dispatch => {
     .catch(error => dispatch(excursionsAction.getExcursionsError(error)));
 };
 
-export default {
-  getExcursions,
-};
+export default getExcursions;

@@ -1,13 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import profileReducer from './Profile/profileReducer';
-import excursionPresentationReducer from './ExcursionsPresentation/excursionsPresentationReducer';
+import excursionsPresentationReducer from './ExcursionsPresentation/excursionsPresentationReducer';
+import excursionsReducer from './Excursion/excursionsReducer';
 
 const store = configureStore({
   reducer: {
     profile: profileReducer,
-    // excutsions: excursionPresentationReducer,
+    excursionsPresentation: excursionsPresentationReducer,
+    excursions: excursionsReducer,
   },
-  // middleware: [md1, md2],
 });
 
 export default store;
