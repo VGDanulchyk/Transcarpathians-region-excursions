@@ -21,12 +21,12 @@ const ExcursionsPresentationSection = props => {
   }
 
   return (
-    <section className={styles.wrapper}>
+    <main className={styles.wrapper}>
       <NavLink to="/excursions" className={styles.titleLink}>
         <h2 className={styles.titleText}>Екскурсії</h2>
       </NavLink>
 
-      <article className={styles.itemContainer}>
+      <section className={styles.itemContainer}>
         {props.excursions.map(excursion => (
           <ExcursionPresentationItem
             key={excursion.id}
@@ -37,10 +37,18 @@ const ExcursionsPresentationSection = props => {
             }}
           />
         ))}
-      </article>
+      </section>
 
-      <Button button={{ name: 'Більше Екскурсій', path: '/excursions' }} />
-    </section>
+      <section className={styles.buttonSectionWrapper}>
+        <article className={styles.buttonWrapper}>
+          <Button button={{ name: 'Створити Екскурсію', path: '/excursions' }} />
+        </article>
+
+        <article className={styles.buttonWrapper}>
+          <Button button={{ name: 'Більше Екскурсій', path: '/excursions' }} />
+        </article>
+      </section>
+    </main>
   );
 };
 

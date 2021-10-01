@@ -4,6 +4,7 @@ import HeaderMenu from '../components/Header/HeaderSection/HeaderMenu/HeaderMenu
 import HeaderSection from '../components/Header/HeaderSection/HeaderSection';
 import ExcursionsSection from '../components/Main/ExcursionsSection/ExcursionsSection';
 import FooterSection from '../components/FooterSection/FooterSection';
+import TrekSection from '../components/Main/TrekSection/TrekSection';
 
 const Excursions = () => {
   return (
@@ -13,6 +14,7 @@ const Excursions = () => {
         <HeaderMenu />
       </HeaderSection>
       <ExcursionsSection />
+      <TrekSection />
       <FooterSection />
     </div>
   );

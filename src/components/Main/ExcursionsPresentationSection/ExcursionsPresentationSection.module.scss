@@ -19,11 +19,24 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .buttonSectionWrapper {
+    display: flex;
+    justify-content: center;
+    .buttonWrapper {
+      margin: 10px 20px;
+    }
+  }
 }
 
 @media (max-width: 900px) {
   .itemContainer {
-    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttonSectionWrapper {
     flex-direction: column;
   }
 }
