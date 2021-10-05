@@ -4,14 +4,14 @@ import styles from './Button.module.scss';
 
 const Button = props => {
   return (
-    <div className={styles.buttonBody}>
+    <section className={styles.buttonBody}>
       <Link to={props.button.path} className={styles.lincStyles}>
-        <div className={styles.btn}>
+        <article className={styles.btn}>
           <span className={styles.noselect}>{props.button.name}</span>
-          <div className={styles.circle}> </div>
-        </div>
+          <article className={styles.circle}> </article>
+        </article>
       </Link>
-    </div>
+    </section>
   );
 };
 

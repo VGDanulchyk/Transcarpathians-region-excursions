@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+
+  .labelContainer {
+    width: 80%;
+
+    .title {
+      color: #a8a878;
+      text-shadow: 2px 3px 8px #a8a878;
+    }
+
+    .inputContainer {
+      margin: 0 0 20px 0;
+      box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px,
+        rgba(17, 17, 26, 0.1) 0 24px 80px;
+
+      .filterStyles {
+        padding: 0 10px;
+        height: 35px;
+        width: 98%;
+      }
+    }
+  }
+}

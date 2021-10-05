@@ -1,0 +1,22 @@
+.container {
+  margin: 0 10px;
+  padding-bottom: 30px;
+  border-radius: 2px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0 1px 0, rgba(17, 17, 26, 0.1) 0 0 8px;
+
+  .titleText {
+    padding: 15px 5px;
+    color: #a8a878;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 3px 8px #a8a878;
+  }
+}
+
+//@media (max-width: 900px) {
+//  .container {
+//    display: flex;
+//    flex-direction: column;
+//    padding-top: 100px;
+//  }
+//}

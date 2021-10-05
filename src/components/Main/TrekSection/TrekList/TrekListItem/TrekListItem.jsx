@@ -1,17 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import treksActions from '../../../../../redux/Treks/treksActions';
+import styles from './TrekListItem.module.scss';
 
-const TrekListItem = ({ text, onRemove }) => {
+const TrekListItem = ({ title, text, price, onRemove }) => {
   return (
-    <li>
-      {/*<h2>{title}</h2>*/}
-      <p>{text}</p>
-      {/*<p>{price}</p>*/}
-      <section>
-        <button type="button" onClick={onRemove}>
-          Видалити
-        </button>
+    <li className={styles.itemContainer}>
+      <section className={styles.itemTitle}>
+        <h3>{title}</h3>
+      </section>
+      <section className={styles.itemContent}>
+        <article className={styles.itemDescription}>
+          <p className={styles.itemText}>{text}</p>
+          <p className={styles.itemPrice}>{price} грн.</p>
+        </article>
+        <article className={styles.itemBtnContainer}>
+          <button className={styles.itemBtn} type="button" onClick={onRemove}>
+            Видалити
+          </button>
+        </article>
       </section>
     </li>
   );
