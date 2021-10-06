@@ -4,16 +4,21 @@ import HeaderMenu from '../components/Header/HeaderSection/HeaderMenu/HeaderMenu
 import HeaderSection from '../components/Header/HeaderSection/HeaderSection';
 import ExcursionsSection from '../components/Main/ExcursionsSection/ExcursionsSection';
 import FooterSection from '../components/FooterSection/FooterSection';
+import styles from './Pages.module.scss';
 
 const Excursions = () => {
   return (
-    <section>
-      <HeaderSection>
-        <Logo />
-        <HeaderMenu />
-      </HeaderSection>
-      <ExcursionsSection />
-      <FooterSection />
+    <section className={styles.container}>
+      <article>
+        <HeaderSection>
+          <Logo />
+          <HeaderMenu />
+        </HeaderSection>
+        <ExcursionsSection />
+      </article>
+      <article>
+        <FooterSection />
+      </article>
     </section>
   );
 };

@@ -4,18 +4,23 @@ import HeaderMenu from '../components/Header/HeaderSection/HeaderMenu/HeaderMenu
 import HeaderSection from '../components/Header/HeaderSection/HeaderSection';
 import PhotoGallerySection from '../components/Main/PhotoGallerySection/PhotoGallerySection';
 import FooterSection from '../components/FooterSection/FooterSection';
+import styles from './Pages.module.scss';
 
 const Gallery = () => {
   return (
-    <section>
-      <HeaderSection>
-        <Logo />
-        <HeaderMenu />
-      </HeaderSection>
+    <section className={styles.container}>
       <article>
-        <PhotoGallerySection />
+        <HeaderSection>
+          <Logo />
+          <HeaderMenu />
+        </HeaderSection>
+        <article>
+          <PhotoGallerySection />
+        </article>
       </article>
-      <FooterSection />
+      <article>
+        <FooterSection />
+      </article>
     </section>
   );
 };

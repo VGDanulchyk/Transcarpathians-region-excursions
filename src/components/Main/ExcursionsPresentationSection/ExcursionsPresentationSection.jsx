@@ -41,7 +41,7 @@ const ExcursionsPresentationSection = props => {
 
       <section className={styles.buttonSectionWrapper}>
         <article className={styles.buttonWrapper}>
-          <Button button={{ name: 'Створити Екскурсію', path: '/excursions' }} />
+          <Button button={{ name: 'Запропонувати Похід', path: '/excursions_creator' }} />
         </article>
 
         <article className={styles.buttonWrapper}>

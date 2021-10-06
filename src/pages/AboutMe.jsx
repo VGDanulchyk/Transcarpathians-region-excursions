@@ -4,17 +4,22 @@ import HeaderMenu from '../components/Header/HeaderSection/HeaderMenu/HeaderMenu
 import HeaderSection from '../components/Header/HeaderSection/HeaderSection';
 import ProfileSection from '../components/Main/ProfileSection/ProfileSection';
 import FooterSection from '../components/FooterSection/FooterSection';
+import styles from './Pages.module.scss';
 
 const AboutMe = () => {
   return (
-    <div>
-      <HeaderSection>
-        <Logo />
-        <HeaderMenu />
-      </HeaderSection>
-      <ProfileSection />
-      <FooterSection />
-    </div>
+    <section className={styles.container}>
+      <article>
+        <HeaderSection>
+          <Logo />
+          <HeaderMenu />
+        </HeaderSection>
+        <ProfileSection />
+      </article>
+      <article>
+        <FooterSection />
+      </article>
+    </section>
   );
 };
 

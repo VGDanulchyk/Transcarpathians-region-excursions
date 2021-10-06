@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.mapContainer {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  .mapBody {
+    max-height: 850px;
+    max-width: 850px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .mapContainer {
+    padding-top: 100px;
+  }
+}
