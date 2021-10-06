@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import treksActions from '../../../../../redux/Treks/treksActions';
 import styles from './TrekListItem.module.scss';
 
-const TrekListItem = ({ title, text, price, onRemove }) => {
+const TrekListItem = ({ title, text, onRemove }) => {
   return (
     <li className={styles.itemContainer}>
       <section className={styles.itemTitle}>
@@ -12,7 +12,6 @@ const TrekListItem = ({ title, text, price, onRemove }) => {
       <section className={styles.itemContent}>
         <article className={styles.itemDescription}>
           <p className={styles.itemText}>{text}</p>
-          <p className={styles.itemPrice}>{price} грн.</p>
         </article>
         <article className={styles.itemBtnContainer}>
           <button className={styles.itemBtn} type="button" onClick={onRemove}>
