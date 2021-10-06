@@ -6,18 +6,37 @@
 
   .labelContainer {
     width: 80%;
-    .title {
-      color: #a8a878;
-      text-shadow: 2px 3px 8px #a8a878;
-    }
+
     .inputContainer {
       margin: 0 0 20px 0;
-      box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px,
-        rgba(17, 17, 26, 0.1) 0 24px 80px;
+
       .inputStyles {
-        padding: 0 10px;
         height: 35px;
-        width: 98%;
+        width: 100%;
+        padding: 0 10px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px,
+          rgba(17, 17, 26, 0.1) 0 24px 80px;
+        &:focus {
+          background: #e5e595;
+          box-shadow: 0 0 2px 1px #a8a878;
+          outline: none;
+        }
+      }
+      .inputTextStyles {
+        width: 100%;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 7px;
+        resize: vertical;
+        box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px,
+          rgba(17, 17, 26, 0.1) 0 24px 80px;
+        &:focus {
+          background: #e5e595;
+          box-shadow: 0 0 2px 1px #a8a878;
+          outline: none;
+        }
       }
     }
   }

@@ -2,20 +2,20 @@ import React from 'react';
 import Logo from '../components/Header/HeaderSection/Logo/Logo';
 import HeaderMenu from '../components/Header/HeaderSection/HeaderMenu/HeaderMenu';
 import HeaderSection from '../components/Header/HeaderSection/HeaderSection';
-import ExcursionsSection from '../components/Main/ExcursionsSection/ExcursionsSection';
+import TrekSection from '../components/Main/TrekSection/TrekSection';
 import FooterSection from '../components/FooterSection/FooterSection';
 
-const Excursions = () => {
+const ExcursionsCreator = () => {
   return (
     <section>
       <HeaderSection>
         <Logo />
         <HeaderMenu />
       </HeaderSection>
-      <ExcursionsSection />
+      <TrekSection />
       <FooterSection />
     </section>
   );
 };
 
-export default Excursions;
+export default ExcursionsCreator;

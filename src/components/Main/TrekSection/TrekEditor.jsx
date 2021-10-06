@@ -7,7 +7,6 @@ class TrekEditor extends Component {
   state = {
     title: '',
     text: '',
-    price: '',
   };
 
   handleTitleChange = titleChange => {
@@ -22,62 +21,38 @@ class TrekEditor extends Component {
     });
   };
 
-  handlePriceChange = priceChange => {
-    this.setState({
-      price: priceChange.target.value,
-    });
-  };
-
   handleSubmit = submit => {
     submit.preventDefault();
-    const { title, text, price } = this.state;
+    const { title, text } = this.state;
 
-    this.props.onAddTrek(title, text, price);
-    this.setState({ title: '', text: '', price: '' });
+    this.props.onAddTrek(title, text);
+    this.setState({ title: '', text: '' });
   };
 
   render() {
     return (
       <form onSubmit={this.handleSubmit} className={styles.formContainer}>
         <label className={styles.labelContainer}>
-          <article className={styles.title}>
-            <h3>Назва екскурсії</h3>
-          </article>
           <article className={styles.inputContainer}>
             <input
               className={styles.inputStyles}
               type="text"
-              placeholder="Назва екскурсії"
+              placeholder="Назва походу"
               value={this.state.title}
               onChange={this.handleTitleChange}
             />
           </article>
         </label>
         <label className={styles.labelContainer}>
-          <article className={styles.title}>
-            <h3>Опис</h3>
-          </article>
           <article className={styles.inputContainer}>
-            <input
-              className={styles.inputStyles}
-              type="text"
-              placeholder="Короткий опис, ідеальної екскурсії"
+            <textarea
+              className={styles.inputTextStyles}
+              name="text"
+              rows="10"
+              cols="5"
+              placeholder="Короткий опис походу"
               value={this.state.text}
               onChange={this.handleTextChange}
-            />
-          </article>
-        </label>
-        <label className={styles.labelContainer}>
-          <article className={styles.title}>
-            <h3>Ціна</h3>
-          </article>
-          <article className={styles.inputContainer}>
-            <input
-              className={styles.inputStyles}
-              type="text"
-              placeholder="Бажана ціна"
-              value={this.state.price}
-              onChange={this.handlePriceChange}
             />
           </article>
         </label>

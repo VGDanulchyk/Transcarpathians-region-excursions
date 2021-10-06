@@ -34,6 +34,15 @@ const HeaderMenu = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink
+              to="/excursions_creator"
+              className={styles.menuLink}
+              activeClassName={styles.active}
+            >
+              Ваш похід
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/gallery" className={styles.menuLink} activeClassName={styles.active}>
               Галерея
             </NavLink>

@@ -16,7 +16,7 @@ const TrekListItem = ({ title, text, price, onRemove }) => {
         </article>
         <article className={styles.itemBtnContainer}>
           <button className={styles.itemBtn} type="button" onClick={onRemove}>
-            Видалити
+            X
           </button>
         </article>
       </section>
