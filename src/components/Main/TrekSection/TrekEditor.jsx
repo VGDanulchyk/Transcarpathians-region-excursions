@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import treksActions from '../../../redux/Treks/treksActions';
+import treksOperations from '../../../redux/Treks/treksOperations';
 import { connect } from 'react-redux';
 import styles from './TrekEditor.module.scss';
 
@@ -25,7 +25,7 @@ class TrekEditor extends Component {
     submit.preventDefault();
     const { title, text } = this.state;
 
-    this.props.onAddTrek(title, text);
+    this.props.onAddTrek({ title, text });
     this.setState({ title: '', text: '' });
   };
 
@@ -68,7 +68,7 @@ class TrekEditor extends Component {
 }
 
 const mapDispatchToProps = {
-  onAddTrek: treksActions.addTrek,
+  onAddTrek: treksOperations.addTrek,
 };
 
 export default connect(null, mapDispatchToProps)(TrekEditor);

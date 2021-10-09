@@ -3,7 +3,7 @@ import { createReducer } from '@reduxjs/toolkit';
 import treksActions from './treksActions';
 
 const addTrek = (state, action) => {
-  return [...state, action.payload.trek];
+  return [...state, action.payload];
 };
 
 const removeTrek = (state, action) => {
@@ -11,15 +11,29 @@ const removeTrek = (state, action) => {
 };
 
 const items = createReducer([], {
-  [treksActions.addTrek]: addTrek,
-  [treksActions.removeTrek]: removeTrek,
+  [treksActions.getTreksSuccess]: (state, action) => action.payload,
+  [treksActions.addTrekSuccess]: addTrek,
+  [treksActions.removeTrekSuccess]: removeTrek,
 });
 
 const filter = createReducer('', {
   [treksActions.changeFilter]: (state, action) => action.payload,
 });
 
+const loading = createReducer(false, {
+  [treksActions.getTreksRequest]: () => true,
+  [treksActions.getTreksSuccess]: () => false,
+  [treksActions.getTreksError]: () => false,
+  [treksActions.addTrekRequest]: () => true,
+  [treksActions.addTrekSuccess]: () => false,
+  [treksActions.addTrekError]: () => false,
+  [treksActions.removeTrekRequest]: () => true,
+  [treksActions.removeTrekSuccess]: () => false,
+  [treksActions.removeTrekError]: () => false,
+});
+
 export default combineReducers({
   items,
+  loading,
   filter,
 });
