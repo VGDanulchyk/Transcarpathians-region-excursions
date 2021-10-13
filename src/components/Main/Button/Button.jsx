@@ -6,12 +6,18 @@ const Button = props => {
   return (
     <section className={styles.buttonBody}>
       <Link to={props.button.path} className={styles.lincStyles}>
-        <article className={styles.btn}>
-          <span className={styles.noselect}>{props.button.name}</span>
-          <article className={styles.circle}> </article>
-        </article>
+        <button className={`${styles.btn} ${styles.third}`}>{props.button.name}</button>
       </Link>
     </section>
+
+    // <section className={styles.buttonBody}>
+    //   <Link to={props.button.path} className={styles.lincStyles}>
+    //     <article className={styles.btn}>
+    //       <span className={styles.noselect}>{props.button.name}</span>
+    //       <article className={styles.circle}> </article>
+    //     </article>
+    //   </Link>
+    // </section>
   );
 };
 
