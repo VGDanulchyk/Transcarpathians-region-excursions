@@ -23,7 +23,7 @@ class Profile extends Component {
     return (
       <div className={styles.mainContainer}>
         <div className={styles.photoContainer}>
-          <img className={styles.photosettings} src={avatar} alt="Profile photo" />
+          <img className={styles.photoSettings} src={avatar} alt="Profile photo" />
         </div>
         <div className={styles.textContainer}>
           <h2 className={styles.titleText}>{title}</h2>

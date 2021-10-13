@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import treksOperations from '../../../redux/Treks/treksOperations';
 import { connect } from 'react-redux';
 import styles from './TrekEditor.module.scss';
+import stylesBtn from '../Button/Button.module.scss';
 
 class TrekEditor extends Component {
   state = {
@@ -57,11 +58,13 @@ class TrekEditor extends Component {
           </article>
         </label>
 
-        <article>
-          <button type="submit" className={styles.btn}>
-            Створити екскурсію
-          </button>
-        </article>
+        <section className={stylesBtn.buttonBody}>
+          <article className={stylesBtn.lincStyles}>
+            <button type="submit" className={`${stylesBtn.btn} ${stylesBtn.third}`}>
+              Створити екскурсію
+            </button>
+          </article>
+        </section>
       </form>
     );
   }
