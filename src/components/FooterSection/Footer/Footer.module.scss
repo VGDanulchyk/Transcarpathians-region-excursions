@@ -3,19 +3,31 @@
   justify-content: space-between;
 
   .footItem {
+    flex: 1;
     margin: 10px auto;
     padding: 5px;
 
     .title {
+      display: flex;
+      justify-content: center;
       padding: 10px 0;
       text-transform: uppercase;
       font-weight: 700;
     }
 
+    .titleText {
+      display: flex;
+      justify-content: center;
+    }
+
     .phoneText {
       padding: 5px 0;
+      display: flex;
+      justify-content: center;
 
       .phone {
+        display: flex;
+        justify-content: center;
         text-decoration: none;
         color: #a8a878;
         font-weight: 700;
@@ -24,6 +36,8 @@
 
     .faceIcon {
       display: flex;
+      justify-content: center;
+
       height: 100%;
       align-items: center;
     }

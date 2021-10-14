@@ -43,12 +43,13 @@
       color: #fff;
       box-shadow: 0 0 40px 40px #a8a878 inset, 0 0 0 0 #a8a878;
       -webkit-transition: all 350ms ease-in-out;
-      transition: all 300ms ease-in-out;
+      transition: all 0.3s ease;
     }
 
     .third:hover {
       box-shadow: 0 0 10px 0 #a8a878 inset, 0 0 10px 4px #a8a878;
       text-shadow: 2px 3px 8px #a8a878;
+      transition: all 0.5s ease;
     }
   }
 }

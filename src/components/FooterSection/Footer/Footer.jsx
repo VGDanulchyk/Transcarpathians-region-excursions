@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <article className={styles.footItem}>
         <p className={styles.title}>Адресса:</p>
-        <p> Україна, Закарпатська область, смт. Воловець.</p>
+        <p className={styles.titleText}> Україна, Закарпатська область, смт. Воловець.</p>
       </article>
       <article className={styles.footItem}>
         <p className={styles.title}>Телефон:</p>
