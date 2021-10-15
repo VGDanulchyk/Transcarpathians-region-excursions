@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import treksAction from '../../../../redux/Treks/treksActions';
 import styles from './Filter.module.scss';
+import excursionsAction from '../../../redux/Excursion/excursionsAction';
 
 const Filter = ({ value, onChangeFilter }) => (
   <section className={styles.wrapper}>
@@ -22,10 +22,10 @@ const Filter = ({ value, onChangeFilter }) => (
 );
 
 const mapStateToProps = state => ({
-  value: state.treks.filter,
+  value: state.excursions.filter,
 });
 
 const mapDispatchToProps = {
-  onChangeFilter: treksAction.changeFilter,
+  onChangeFilter: excursionsAction.changeFilter,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Filter);

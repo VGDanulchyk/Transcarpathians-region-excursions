@@ -5,6 +5,7 @@ export default createReducer(
   {
     loading: false,
     trips: [],
+    filter: '',
   },
 
   {
@@ -19,6 +20,14 @@ export default createReducer(
       return {
         ...state,
         trips: action.payload,
+        loading: false,
+      };
+    },
+
+    [excursionsAction.changeFilter]: (state, action) => {
+      return {
+        ...state,
+        filter: action.payload,
         loading: false,
       };
     },

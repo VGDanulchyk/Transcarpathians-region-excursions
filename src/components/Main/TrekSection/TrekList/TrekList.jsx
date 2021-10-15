@@ -13,15 +13,8 @@ const TrekList = ({ treks }) => (
   </section>
 );
 
-const mapStateToProps = state => {
-  const { items, filter } = state.treks;
-  const normalizedFilter = filter.toLowerCase();
-
-  const visibleTreks = items.filter(trek => trek.text.toLowerCase().includes(normalizedFilter));
-
-  return {
-    treks: visibleTreks,
-  };
-};
+const mapStateToProps = state => ({
+  treks: state.treks.items,
+});
 
 export default connect(mapStateToProps)(TrekList);

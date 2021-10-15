@@ -13,7 +13,6 @@ const removeTrekSuccess = createAction('treks/removeSuccess');
 const removeTrekError = createAction('treks/removeError');
 
 const removeTrek = createAction('treks/remove');
-const changeFilter = createAction('treks/changeFilter');
 
 export default {
   addTrekRequest,
@@ -26,5 +25,4 @@ export default {
   removeTrekSuccess,
   removeTrekError,
   removeTrek,
-  changeFilter,
 };

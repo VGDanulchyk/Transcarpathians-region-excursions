@@ -16,10 +16,6 @@ const items = createReducer([], {
   [treksActions.removeTrekSuccess]: removeTrek,
 });
 
-const filter = createReducer('', {
-  [treksActions.changeFilter]: (state, action) => action.payload,
-});
-
 const loading = createReducer(false, {
   [treksActions.getTreksRequest]: () => true,
   [treksActions.getTreksSuccess]: () => false,
@@ -35,5 +31,5 @@ const loading = createReducer(false, {
 export default combineReducers({
   items,
   loading,
-  filter,
+  // filter,
 });
