@@ -6,9 +6,6 @@ import excursionsAction from '../../../redux/Excursion/excursionsAction';
 const Filter = ({ value, onChangeFilter }) => (
   <section className={styles.wrapper}>
     <label className={styles.labelContainer}>
-      <article className={styles.title}>
-        <h3>Фільтр</h3>
-      </article>
       <article className={styles.inputContainer}>
         <input
           className={styles.filterStyles}
