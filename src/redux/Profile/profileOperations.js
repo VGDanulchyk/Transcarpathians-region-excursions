@@ -1,19 +1,12 @@
 import axios from 'axios';
 import profileAction from './profileAction';
-
-let en;
-
-if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
-  en = process.env.LOCAL_DB;
-} else {
-  en = process.env.REMOTE_DB;
-}
+import { apiEndpoint } from '../../envConfig';
 
 const getProfileInfo = () => dispatch => {
   dispatch(profileAction.getProfileInfoRequest());
 
   axios
-    .get(`http://${en}`)
+    .get(`${apiEndpoint}/profileinfo`)
     .then(response => dispatch(profileAction.getProfileInfoSuccess(response.data)))
     .catch(error => dispatch(profileAction.getProfileInfoError(error)));
 };
