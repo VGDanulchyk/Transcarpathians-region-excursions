@@ -1,6 +1,7 @@
 import axios from 'axios';
 import treksActions from './treksActions';
 import trekImg from '../../img/MainImg/trekimg.jpg';
+import { apiEndpoint } from '../../envConfig';
 
 const addTrek =
   ({ title, text }) =>
