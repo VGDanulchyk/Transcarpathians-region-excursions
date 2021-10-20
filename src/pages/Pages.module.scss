@@ -17,8 +17,23 @@
   }
 }
 
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 900px) {
   .mapContainer {
     padding-top: 100px;
+  }
+
+  .loading {
+    margin-top: 100px;
+  }
+
+  .profileSection {
+    margin-top: -80px;
   }
 }

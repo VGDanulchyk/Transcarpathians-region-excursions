@@ -32,32 +32,28 @@
     &:hover {
       transform: translateY(50px) scale(1.15);
       box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.6);
-      //transform-origin: center;
       transition: all 1s ease 0s;
     }
   }
-
-  @media (max-width: 900px) {
-    .photoContainer {
-      margin: 15px auto;
-    }
-
-    .photosettings {
-      min-width: 230px;
-    }
-  }
-
-  @media (max-width: 900px) {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
-.loadingStyle {
-  font-size: 2.5rem;
+.loading {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #72712a;
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    .photoContainer {
+      margin: 15px auto;
+    }
+
+    .photoSettings {
+      min-width: 230px;
+    }
+  }
 }

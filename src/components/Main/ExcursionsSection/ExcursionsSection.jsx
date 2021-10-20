@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import ExcursionItem from './ExcursionItem/ExcursionItem';
 import getExcursions from '../../../redux/Excursion/excursionsOperations';
 import styles from './ExcursionsSection.module.scss';
-import loadStyles from '../ProfileSection/Profile/Profile.module.scss';
+import loadStyles from '../../../pages/Pages.module.scss';
 import Filter from '../Filter/Filter';
+import { Puff } from '@agney/react-loading';
 
 const ExcursionsSection = props => {
   useEffect(() => {
@@ -13,9 +14,9 @@ const ExcursionsSection = props => {
 
   if (props.loading) {
     return (
-      <div className={loadStyles.loadingStyle}>
-        <h2>Loading...</h2>
-      </div>
+      <article className={loadStyles.loading}>
+        <Puff width="200" color="#72712a" />
+      </article>
     );
   }
 

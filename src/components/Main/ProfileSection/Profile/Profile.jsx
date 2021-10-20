@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Puff } from '@agney/react-loading';
 import profileOperations from '../../../../redux/Profile/profileOperations';
 import styles from './Profile.module.scss';
 import avatar from '../../../../img/MainImg/ProfileImg/Avatar.jpg';
@@ -14,9 +15,9 @@ class Profile extends Component {
 
     if (loading) {
       return (
-        <div className={styles.loadingStyle}>
-          <h2>Loading...</h2>
-        </div>
+        <article className={styles.loading}>
+          <Puff width="200" color="#72712a" />
+        </article>
       );
     }
 

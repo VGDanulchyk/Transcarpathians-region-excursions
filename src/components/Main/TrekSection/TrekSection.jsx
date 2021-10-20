@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import TrekEditor from './TrekEditor';
 import TrekList from './TrekList/TrekList';
 import styles from './TrekSection.module.scss';
-import loadStyles from '../ProfileSection/Profile/Profile.module.scss';
+import loadStyles from '../../../pages/Pages.module.scss';
 import treksOperations from '../../../redux/Treks/treksOperations';
+import { Puff } from '@agney/react-loading';
 
 const TrekSection = props => {
   useEffect(() => {
@@ -13,9 +14,9 @@ const TrekSection = props => {
 
   if (props.loading) {
     return (
-      <div className={loadStyles.loadingStyle}>
-        <h2>Loading...</h2>
-      </div>
+      <article className={loadStyles.loading}>
+        <Puff width="200" color="#72712a" />
+      </article>
     );
   }
 

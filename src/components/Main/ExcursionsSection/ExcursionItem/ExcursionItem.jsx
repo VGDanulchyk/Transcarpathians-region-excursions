@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './ExcursionItem.module.scss';
-import loadStyles from '../../ProfileSection/Profile/Profile.module.scss';
+import loadStyles from '../../../../pages/Pages.module.scss';
+import { Puff } from '@agney/react-loading';
 
 class ExcursionItem extends Component {
   render() {
@@ -11,9 +12,9 @@ class ExcursionItem extends Component {
 
     if (loading) {
       return (
-        <div className={loadStyles.loadingStyle}>
-          <h2>Loading...</h2>
-        </div>
+        <article className={loadStyles.loading}>
+          <Puff width="200" color="#72712a" />
+        </article>
       );
     }
 
