@@ -23,8 +23,11 @@ const Footer = () => {
         </p>
       </article>
       <article className={styles.footItem}>
-        <div className={styles.faceIcon}>
-          <SocialIcon url="https://www.facebook.com/profile.php?id=100010266603693" />
+        <div className={styles.faceIconContainer}>
+          <SocialIcon
+            url="https://www.facebook.com/profile.php?id=100010266603693"
+            className={styles.faceIcon}
+          />
         </div>
       </article>
     </footer>
