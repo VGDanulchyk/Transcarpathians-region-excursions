@@ -54,6 +54,9 @@
 
     .photoSettings {
       min-width: 230px;
+      &:hover {
+        transform: none;
+      }
     }
   }
 }
